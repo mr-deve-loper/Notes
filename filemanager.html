@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .folder {
+            padding: 15px;
+            background: #ececec;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .folder:hover {
+            background: #dcdcdc;
+        }
+        .file-list {
+            display: none;
+            margin-left: 20px;
+        }
+        .file-list a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #4a90e2;
+        }
+    </style>
+    <script>
+        function toggleFolder(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>My File Manager</h1>
+    </header>
+
+    <main class="section">
+        <div class="folder" onclick="toggleFolder('html-files')">📁3D Images Slider</div>
+        <div id="html-files" class="file-list">
+            
+            
+            <a href="https://ivory-betsy-14.tiiny.site/main-html.pdf">main.html</a>
+            <a href="https://ivory-betsy-14.tiiny.site/style-css.pdf">style.css</a>
+            <a href="https://ivory-betsy-14.tiiny.site/app-js.pdf">script.css</a>
+            <a href="https://drive.google.com/drive/folders/14GWEs6a5-eniVVO0yH5imwtDqA8S367G?usp=drive_link">📁Images</a>
+            
+           
+
+           
+
+
+        </div>
+
+        
+
+   
+</body>
+</html>

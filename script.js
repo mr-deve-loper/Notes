@@ -1,0 +1,1 @@
+console.log("EduBook Hub loaded successfully!");

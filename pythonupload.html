@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .folder {
+            padding: 15px;
+            background: #ececec;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .folder:hover {
+            background: #dcdcdc;
+        }
+        .file-list {
+            display: none;
+            margin-left: 20px;
+        }
+        .file-list a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: #4a90e2;
+        }
+    </style>
+    <script>
+        function toggleFolder(id) {
+            var list = document.getElementById(id);
+            if (list.style.display === "none") {
+                list.style.display = "block";
+            } else {
+                list.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <h1>My File Manager</h1>
+    </header>
+
+    <main class="section">
+        <div class="folder" onclick="toggleFolder('html-files')">📁Voice-assistant</div>
+        <div id="html-files" class="file-list">
+            
+            
+            <a href="https://amber-fanni-82.tiiny.site/voice-assistant-py.pdf">Voice-assistant.py</a>
+            <a href="https://amber-fanni-82.tiiny.site/requirements-txt.pdf">Requirements.txt</a>
+            
+
+        </div>
+
+        
+
+   
+</body>
+</html>
